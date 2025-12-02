@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "InstagramProfile",
+  "display": "standalone",
+  "name": "InstagramProfile",
+  "short_name": "InstagramProfile",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
