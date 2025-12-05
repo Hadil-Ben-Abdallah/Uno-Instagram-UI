@@ -21,7 +21,7 @@ The design works beautifully on both **desktop** and **mobile**, adapting layout
 The UI respects system theme changes so everything, texts, icons, buttons, backgrounds, adjusts cleanly between light and dark.
 
 
-🔗 [Check out my full submission here](https://)
+🔗 [Check out my full submission here](https://dev.to/hadil/from-zero-to-beautiful-ui-how-i-built-an-instagram-like-layout-using-uno-platform-hot-design-302h)
 
 ---
 
