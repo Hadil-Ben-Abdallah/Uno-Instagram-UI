@@ -84,13 +84,13 @@
                        Margin="0,4,0,0"/>
 </StackPanel>
 
-<!-- Buttons (built-in Button) -->
+<!-- Buttons -->
 <StackPanel Orientation="Horizontal" Spacing="12" Margin="20,10,0,0">
     <Button CornerRadius="10" Content="Edit Profile" MinWidth="170" />
     <Button CornerRadius="10" Content="View Archive" MinWidth="170" />
 </StackPanel>
 
-            <!-- STORIES -->
+            <!-- Stories -->
             <ScrollViewer HorizontalScrollBarVisibility="Hidden" Margin="20,16,0,0">
                 <StackPanel Spacing="22" Orientation="Horizontal" >
                     <!-- Story Template -->
@@ -132,10 +132,8 @@
 
 <StackPanel>
     <Grid Width="77" Height="77">
-        <!-- Border circle -->
         <Ellipse Stroke="Gray" StrokeThickness="2"/>
 
-        <!-- Image circle with gap -->
         <Ellipse Width="66" Height="66" Margin="4">
             <Ellipse.Fill>
                 <ImageBrush ImageSource="ms-appx:///Resources/Images/story2.png"/>
@@ -153,27 +151,37 @@
             </ScrollViewer>
 
 <StackPanel Orientation="Vertical" Spacing="5" Margin="0,10,0,0">
-                        <!-- TABS -->
-            <StackPanel Spacing="300" Orientation="Horizontal"
-                        HorizontalAlignment="Center"
-                        Margin="0,10,0,0">
- <!-- Posts icon -->
-    <FontIcon Glyph="&#xE91B;"
-              FontFamily="Segoe Fluent Icons"
-              Foreground="{ThemeResource AccentTextFillColorPrimary}" />
+                        <!-- Tabs -->
+<Grid Margin="0,10,0,0">
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
 
-    <!-- Reels icon -->
-    <FontIcon Glyph="&#xF5B0;"
+    <!-- Posts -->
+    <FontIcon Grid.Column="0"
+              Glyph="&#xE91B;"
               FontFamily="Segoe Fluent Icons"
-              Foreground="{ThemeResource TextFillColorSecondary}" />
+              Foreground="{ThemeResource AccentTextFillColorPrimary}"
+              HorizontalAlignment="Center"/>
 
-    <!-- Tagged people icon -->
-    <FontIcon Glyph="&#xE77B;"
+    <!-- Reels -->
+    <FontIcon Grid.Column="1"
+              Glyph="&#xF5B0;"
               FontFamily="Segoe Fluent Icons"
-              Foreground="{ThemeResource TextFillColorSecondary}" />
-            </StackPanel>
+              Foreground="{ThemeResource TextFillColorSecondary}"
+              HorizontalAlignment="Center"/>
 
-<!-- POSTS GRID -->
+    <!-- Tagged -->
+    <FontIcon Grid.Column="2"
+              Glyph="&#xE77B;"
+              FontFamily="Segoe Fluent Icons"
+              Foreground="{ThemeResource TextFillColorSecondary}"
+              HorizontalAlignment="Center"/>
+</Grid>
+
+<!-- Posts Grid -->
 <Grid Margin="0,12,0,0"
       ColumnSpacing="4"
       RowSpacing="4">
