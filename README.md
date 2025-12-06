@@ -41,7 +41,11 @@ The UI respects system theme changes so everything, texts, icons, buttons, backg
 
 * Clean modern Instagram-style layout
 * Profile header with posts/followers/following
-* Responsive 3-column photo grid
+* Fully Cross-Platform   
+    One codebase running across:  
+      - Desktop  
+      - Mobile  
+      - WebAssembly 
 * Smooth light/dark theme adaptation
 * Designed visually using Hot Reload + Hot Design
 
